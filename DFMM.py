@@ -178,7 +178,7 @@ class DFMM(nn.Module):
                  device=device)
         # instantiate the subsequent network
         self.FF = FeedForward(self.n_base*80,4,[self.n_base*80,160,128])
-        # instantiate the initial network
+        # instantiate the initial transformation network
         self.encoder_layers = nn.TransformerEncoderLayer(d_model=20, nhead=4, dim_feedforward=1024, batch_first=True)
         self.transformer_encoder = nn.TransformerEncoder(self.encoder_layers, 4)
         
