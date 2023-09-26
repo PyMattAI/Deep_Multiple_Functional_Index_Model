@@ -1,2 +1,2 @@
-# Deep_Multiple_Functional_Index_Model
+# Deep Multiple Functional Index Model
 Generalize adaptive basis layer to multiple functional index model
